@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     WebElement passwordField;
 
     public LoginPage enterUserData(String userName, String password) {
-        type(userField, userName);
+        typeWithJS(userField, userName,0,300);
         type(passwordField, password);
         return this;
     }
